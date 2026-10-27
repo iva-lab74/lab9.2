@@ -15,8 +15,8 @@ export function CharacterCounter({ }: CharacterCounterProps) {
     if (trimmed !== "") {
         wordCount = trimmed.split(/\s+/).length;
     }
-    //calculating words per minute
-    const stats: TextStats = {characterCount: text.length, wordCount, readingTime: Math.ceil(wordCount / WPM),
+    //calculating words per seconds
+    const stats: TextStats = {characterCount: text.length, wordCount, readingTime: Math.ceil((wordCount / WPM) * 60),
 
     };
 
