@@ -1,4 +1,4 @@
-import { TextInputProps } from "../../types";
+import type { TextInputProps } from "../../types";
 
 import { useState } from 'react'; // Import useState from React
  
