@@ -6,7 +6,7 @@ export function StatsDisplay({ stats, showReadingTime = true,}: StatsDisplayProp
         <div>
             <p>Characters: {stats.characterCount}</p>
             <p> Words: {stats.wordCount}</p>
-            //showReadingTime needs to be read
+            
             {showReadingTime && <p>Reading time: {stats.readingTime} min</p>}
         </div>
     );
